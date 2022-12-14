@@ -1,7 +1,7 @@
 {
     "name": "to-do-date",
     "version": "0.1.0",
-    "homepage": "https://rataysh.github.io/toDoDate/",
+    "homepage": "https://rataysh.github.io/toDoDate/react-gh-pages",
     "private": true,
     "dependencies": {
         "@date-io/dayjs": "^2.16.0",
