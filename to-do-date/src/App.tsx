@@ -12,7 +12,7 @@ function App() {
 
     return (
         <div className='flex flex-col h-screen justify-center items-center transition-all duration-500'>
-            <div className='border-4 p-2 border-blue-200 w-fit'>
+            <div className='border-4 p-2 rounded-md border-blue-200 w-fit'>
                 <HeadTable />
                 {tasks?.map((task) => (
                     <TaskView key={task.id} task={task} />

@@ -3,6 +3,7 @@
 import React, {useState} from "react";
 import {dateApi} from "../redux/api/dateApi";
 import {ChooseDate} from "./ChooseDate";
+import {ChooseDateRange} from "./ChooseDateRange";
 
 export const CreateNewTask: React.FC = () => {
     const [dateOfSend, setDateOfSend] = useState<string>("");
@@ -24,7 +25,7 @@ export const CreateNewTask: React.FC = () => {
             </div>
 
             <div className='flex flex-col w-fit'>
-                <div className='flex space-x-6 mt-8'>
+                <div className='flex flex-col sm:flex-row sm:space-x-6 mt-8'>
                     <div>
                         <ChooseDate
                             title={"Дата отправки"}
@@ -33,21 +34,15 @@ export const CreateNewTask: React.FC = () => {
                     </div>
 
                     <div>
-                        <ChooseDate
-                            title={"Начало задачи"}
-                            callback={setForecastEnd}
-                        />
-                    </div>
-
-                    <div>
-                        <ChooseDate
-                            title={"Завершение задачи"}
-                            callback={setForecastStart}
+                        <ChooseDateRange
+                            title={"Выберете даты прогноза на период"}
+                            callbackStart={setForecastStart}
+                            callbackEnd={setForecastEnd}
                         />
                     </div>
                 </div>
                 <button
-                    className='mt-4 h-10 p-1 self-end flex justify-center items-center bg-blue-200 rounded-sm hover:bg-blue-300 active:bg-blue-400 '
+                    className='mt-4 h-10 p-1 px-2 sm:self-end flex justify-center items-center bg-blue-200 rounded-md hover:bg-blue-300 active:bg-blue-400 '
                     onClick={createNewTask}>
                     Создать
                 </button>

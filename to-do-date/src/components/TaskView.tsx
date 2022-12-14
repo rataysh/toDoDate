@@ -17,13 +17,13 @@ export const TaskView: React.FC<ITaskView> = ({task}) => {
     };
 
     return (
-        <div className=' flex'>
-            <p className=' w-10'>{task.id}</p>
-            <p className='w-44'>{task.dateOfSend}</p>
-            <p className='w-60'>
+        <div className='flex space-x-6'>
+            <p className='w-9 sm:w-10'>{task.id}</p>
+            <p className='w-22 sm:w-44'>{task.dateOfSend}</p>
+            <p className='w-30 sm:w-60'>
                 {task.forecastStart} - {task.forecastEnd}
             </p>
-            <p className=' w-10 flex justify-center cursor-pointer'>
+            <p className='w-8 flex justify-center cursor-pointer'>
                 <MdDeleteOutline onClick={deleteTask} />
             </p>
         </div>

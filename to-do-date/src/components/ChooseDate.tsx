@@ -1,11 +1,8 @@
 /** @format */
 
-import * as React from "react";
-import {Dayjs} from "dayjs";
-import TextField from "@mui/material/TextField";
-import {AdapterDayjs} from "@mui/x-date-pickers/AdapterDayjs";
-import {LocalizationProvider} from "@mui/x-date-pickers/LocalizationProvider";
-import {DatePicker} from "@mui/x-date-pickers/DatePicker";
+import React from "react";
+import {DatePicker} from "antd";
+import moment from "moment";
 
 interface IChooseDate {
     title: string;
@@ -13,19 +10,16 @@ interface IChooseDate {
 }
 
 export const ChooseDate: React.FC<IChooseDate> = ({title, callback}) => {
-    const [value, setValue] = React.useState<Dayjs | null>(null);
-
     return (
-        <LocalizationProvider dateAdapter={AdapterDayjs}>
-            <DatePicker
-                label={title}
-                value={value}
-                onChange={(newValue) => {
-                    setValue(newValue);
-                    if (newValue !== null) callback(newValue.format("DD/MM/YYYY").toString());
-                }}
-                renderInput={(params) => <TextField {...params} />}
-            />
-                    </LocalizationProvider>
+        <>
+            <div className=''>{title}</div>
+            <div className=''>
+                <DatePicker
+                    onChange={(values: any) => {
+                        console.log(values);
+                        callback(values.format("YYYY-DD-MM"));
+                    }}></DatePicker>
+            </div>
+        </>
     );
 };

@@ -2,10 +2,8 @@
 
 import {combineReducers, configureStore} from "@reduxjs/toolkit";
 import {dateApi} from "./api/dateApi";
-import plannerApiReducer from "./reducers/PlannerSlice";
 
 const rootReducer = combineReducers({
-    plannerApiReducer,
     [dateApi.reducerPath]: dateApi.reducer,
 });
 export const setupStore = () => {
