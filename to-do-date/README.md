@@ -1,46 +1,37 @@
-# Getting Started with Create React App
+# This is a project for my portfolio
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## [VIEW](https://rataysh.github.io/toDoDate/)
 
-## Available Scripts
+## I used the following set of tools to create this project:
 
-In the project directory, you can run:
+### 1) Language 
+- completely on Typescript
 
-### `npm start`
+### 2) Library 
+- React
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+### 3) State manager 
+- Redux-toolkit
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+### 3) API
+- RTK Query
 
-### `npm test`
+### 4) Style
+- Tailwindcss
+- Ant Design
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Screenshots
 
-### `npm run build`
+#### - Get all tasks from the server
+![main](https://user-images.githubusercontent.com/88318279/210104859-67a98487-a7ff-4e33-9990-30ea15d5e97a.png)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+#### - Create new task
+![statr date](https://user-images.githubusercontent.com/88318279/210104878-1ceecd91-e832-4394-9cbb-e0b1c7e0ddaa.png)
+![date-range](https://user-images.githubusercontent.com/88318279/210104883-dfe0a442-51d5-4284-9c6c-bd01515a53e0.png)
+![new](https://user-images.githubusercontent.com/88318279/210104891-14c3366f-ddb5-4263-b4e4-c434b8656572.png)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+#### - Delete task
+![del_1](https://user-images.githubusercontent.com/88318279/210105053-5488c434-c77f-4b8d-9046-69ae61ad3fe7.png)
+![del_2](https://user-images.githubusercontent.com/88318279/210105058-d1bbdb75-8bb4-4d3f-8324-2966216bca7a.png)
