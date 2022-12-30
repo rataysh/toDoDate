@@ -42,7 +42,7 @@ export const CreateNewTask: React.FC = () => {
                 <button
                     className='mt-4 h-10 p-1 px-2 sm:self-end flex justify-center items-center bg-blue-200 rounded-md hover:bg-blue-300 active:bg-blue-400 '
                     onClick={createNewTask}>
-                    Создать
+                    Create
                 </button>
             </div>
         </>
