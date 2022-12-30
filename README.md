@@ -14,7 +14,7 @@
 - Redux-toolkit
 
 ### 3) API
-- RTK Query for api
+- RTK Query
 
 ### 4) Style
 - Tailwindcss
