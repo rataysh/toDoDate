@@ -20,22 +20,20 @@ export const CreateNewTask: React.FC = () => {
 
     return (
         <>
-            <div className=' mt-16 text-lg font-bold '>
-                Создать новую задачу
-            </div>
+            <div className=' mt-16 text-lg font-bold '>Create new task</div>
 
             <div className='flex flex-col w-fit'>
                 <div className='flex flex-col sm:flex-row sm:space-x-6 mt-8'>
                     <div>
                         <ChooseDate
-                            title={"Дата отправки"}
+                            title={"Start date"}
                             callback={setDateOfSend}
                         />
                     </div>
 
                     <div>
                         <ChooseDateRange
-                            title={"Выберете даты прогноза на период"}
+                            title={"Date range"}
                             callbackStart={setForecastStart}
                             callbackEnd={setForecastEnd}
                         />

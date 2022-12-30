@@ -1,7 +1,7 @@
 /** @format */
 import React from "react";
 import {DatePicker} from "antd";
-import moment from "moment";
+
 
 const {RangePicker} = DatePicker;
 
